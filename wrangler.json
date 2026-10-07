@@ -1,0 +1,37 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "worker-previews-starter1",
+	"upload_source_maps": true,
+	// Production settings live at the top level.
+	"vars": {
+		"ENVIRONMENT": "production"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "dfbfc847-4163-44ae-acca-5a594fb8ec2c",
+			"database_name": "activity-log-db"
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	// Preview settings live here. Previews don't inherit production vars or
+	// bindings: add Preview-only bindings (like the Preview D1 database) here.
+	"previews": {
+		"vars": {
+			"ENVIRONMENT": "preview"
+		},
+		"d1_databases": [
+			{
+				"binding": "DB",
+				"database_id": "0e577df8-6af6-4e5d-8614-487c34106d0d",
+				"database_name": "workshop-preview-db"
+			}
+		],
+		"observability": {
+			"enabled": true
+		}
+	}
+}
