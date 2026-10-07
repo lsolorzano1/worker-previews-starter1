@@ -12,6 +12,12 @@
 			"binding": "DB",
 			"database_id": "dfbfc847-4163-44ae-acca-5a594fb8ec2c",
 			"database_name": "activity-log-db"
+		},
+		{
+			"binding": "workshop_preview_db",
+			"database_name": "workshop-preview-db",
+			"database_id": "2bc55811-5d4f-4514-93bb-c62dc8c096e4",
+			"remote": true
 		}
 	],
 	"observability": {
